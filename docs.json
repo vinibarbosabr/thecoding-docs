@@ -7,7 +7,7 @@
     "light": "#FFF3CE",
     "dark": "#008BBE"
   },
-  "description": "Vini B | thecoding turns complex developer and security topics into content and documentation people understand, use, and share.",
+  "description": "Vini B @ thecoding turns complex developer and security topics into content and documentation people understand, use, and share.",
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/logo.png",
@@ -16,7 +16,7 @@
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Welcome",
         "pages": [
           "index",
           "quickstart"
