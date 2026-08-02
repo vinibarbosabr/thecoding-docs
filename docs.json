@@ -26,13 +26,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Personal Portfolio",
+          "href": "https://vinib.github.io",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Substack",
+          "href": "https://thecoding.substack.com",
           "icon": "newspaper"
         }
       ]
@@ -42,7 +42,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:thecoding@proton.me"
       }
     ],
     "primary": {
@@ -65,9 +65,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/vinibarbosabr",
+      "github": "https://github.com/vinibarbosabr",
+      "linkedin": "https://linkedin.com/company/thecoding"
     }
   }
 }
