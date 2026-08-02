@@ -1,12 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "palm",
+  "name": "Vini B | thecoding",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#042F2E",
+    "light": "#FFF3CE",
+    "dark": "#042F2E"
   },
+  "description": "Vini B | thecoding turns complex developer and security topics into content and documentation people understand, use, and share.",
   "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
