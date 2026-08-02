@@ -9,6 +9,10 @@
   },
   "description": "Vini B | thecoding turns complex developer and security topics into content and documentation people understand, use, and share.",
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo-dark.svg"
+  },
   "navigation": {
     "pages": [
       {
@@ -33,10 +37,6 @@
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
   },
   "navbar": {
     "links": [
