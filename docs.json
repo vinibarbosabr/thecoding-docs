@@ -13,6 +13,9 @@
     "light": "/logo/logo.png",
     "dark": "/logo/logo-dark.png"
   },
+  "fonts": {
+    "family": "JetBrains Mono"
+  },
   "navigation": {
     "pages": [
       {
