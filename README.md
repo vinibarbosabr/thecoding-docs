@@ -1,55 +1,107 @@
-# Mintlify Starter Kit
+# thecoding
 
-Use the starter kit to get your docs deployed and ready to customize.
+> Services portfolio and independent contractor landing website for **Vini B | thecoding**, by **Vini Barbosa** (`@vinibarbosabr`).
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+**Live site:** [vinib.mintlify.site](https://vinib.mintlify.site)
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+This repository powers the public documentation and services site for **thecoding**.  
+It is built with [Mintlify](https://mintlify.com) using the **Palm** theme and follows a docs-as-code approach.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+---
 
-## AI-assisted writing
+## What is thecoding?
 
-Set up your AI coding tool to work with Mintlify:
+**thecoding** is the independent contractor brand of Vini Barbosa (Vini B) — a technical writer, documentation engineer, developer relations partner, and security researcher focused on blockchain and Web3.
 
-```bash
-npx skills add https://mintlify.com/docs
+Main service lanes:
+
+- **Sponsored Technical Content** — deep research articles, tutorials, and educational material published on thecoding channels (Substack + X + LinkedIn).
+- **Documentation Engineering** — docs audits, focused sprints, full overhauls, and ongoing docs ownership (docs-as-code).
+- **DevRel Partner** — workshops, talks, community support, and developer education.
+
+The site also hosts selected portfolio work, open recommendations from clients/partners, and practical entry points to start a project.
+
+---
+
+## Repository structure
+
+```text
+.
+├── docs.json              # Mintlify configuration (navigation, theme, colors, footer)
+├── index.mdx              # About / Welcome
+├── quickstart.mdx         # How to start a project
+├── technical-writing.mdx  # Sponsored content lane (to be expanded)
+├── documentation.mdx      # Docs engineering lane (to be expanded)
+├── devrel.mdx             # DevRel lane (to be expanded)
+├── public/                # Static assets (images, banners)
+├── logo/                  # Light & dark logos
+└── README.md
 ```
 
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
+Navigation is defined in `docs.json`. New pages are added as `.mdx` files and registered in the navigation groups.
 
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+## Local development
 
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
+```Bash
+# Install Mintlify CLI
 npm i -g mint
-```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
-
-```
+# Run local preview (from the repo root)
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+Open <http://localhost:3000>.
 
-## Publishing changes
+## How the site is updated & deployed
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+1. Make changes in this repository (edit .mdx files or docs.json).
+2. Push to the main branch.
+3. Mintlify automatically rebuilds and deploys the site (GitHub App integration).
 
-## Need help?
+There is no manual build step required for production.
 
-### Troubleshooting
+## Theme & stack
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+Platform: [Mintlify](https://mintlify.com/)
+Theme: [Palm](https://palm.mintlify.site/)
+Content format: [MDX](https://github.com/mdx-js/mdx/)
+Primary colors: defined in docs.json (#042F2E, #FFF3CE, #008BBE)
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+This site itself is an example of the documentation engineering work offered by thecoding.
+
+## Contributing / Leaving a recommendation
+
+This repository is public by design and follows Free (Libre) Open-Source Software practices/ethos.
+
+### Recommendations & Endorsements
+
+Clients and partners can leave public recommendations by opening a Pull Request.
+
+1. Fork the repository (or create a branch if you have write access).
+2. Add a new file under a `recommendations/` folder (or follow the template on the site).
+3. Include:
+
+- Your name / project
+- Role / relationship
+- Short testimonial (2-6 sentences)
+- Optional: link to the related work or project
+1. Open a PR with a clear title, e.g. `recommendation: [Project Name]`.
+
+Recommendations are reviewed and merged. Once merged, they appear on the public **Recommendations & Endorsements** page.
+A simpler form-based flow may be added later. For now, the pure Github PR approach keeps everything transparent and version-controlled.
+
+### Other Contributions
+
+Bug reports, typos, broken links, and small improvements are highly welcome via Issues or PRs.
+
+## Contact
+
+- Email: [thecoding@proton.me](mailto:thecoding@proton.me)
+- X: [@vinibarbosabr](https://x.com/vinibarbosabr)
+- Signal: [@vinib90](https://signal.me/#eu/xzhT7ZjGlbwTMVtZr8v-NUonD7NuPtFd4UbyMsRNFOJ-Jh4HjKxAG4uIlu5hdFdq)
+- Telegram: [@vinibarbosa](https://t.me/vinibarbosa)
+- Book a call: [CalCom/vinib](https://cal.com/vinib)
+
+## License
+
+MIT
