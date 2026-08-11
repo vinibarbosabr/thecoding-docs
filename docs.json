@@ -23,11 +23,26 @@
         ]
       },
       {
-        "group": "Projects",
+        "group": "Services",
         "pages": [
           "technical-writing",
           "documentation",
           "devrel"
+        ]
+      },
+      {
+        "group": "Proof of Work",
+        "pages": [
+          "resume",
+          "endorsements"
+        ]
+      },
+      {
+        "group": "Connect",
+        "pages": [
+          "contact",
+          "links",
+          "terms"
         ]
       }
     ],
