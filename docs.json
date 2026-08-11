@@ -21,6 +21,14 @@
           "index",
           "quickstart"
         ]
+      },
+      {
+        "group": "Projects",
+        "pages": [
+          "technical-writing",
+          "documentation",
+          "devrel"
+        ]
       }
     ],
     "global": {
