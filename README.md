@@ -2,7 +2,7 @@
 
 > Services portfolio and independent contractor landing website for **Vini B | thecoding**, by **Vini Barbosa** (`@vinibarbosabr`).
 
-**Live site:** [vinib.mintlify.site](https://vinib.mintlify.site)
+**Live site:** [thecoding.dev](https://thecoding.dev)
 
 This repository powers the public documentation and services site for **thecoding**.  
 It is built with [Mintlify](https://mintlify.com) using the **Palm** theme and follows a docs-as-code approach.
