@@ -1,0 +1,147 @@
+---
+title: "Recommendations & Endorsements"
+description: "What clients, collaborators, and community members say about working with Vini Barbosa | thecoding."
+sidebarTitle: "Endorsements"
+---
+
+# Recommendations & Endorsements
+
+Real feedback from clients, collaborators, and community members.
+
+---
+
+## Client & Professional Recommendations
+
+### LinkedIn
+
+> “I met Vini after I published an article on the Nano currency back in August 2022. The discussions I had with him since then taught me a lot about the basics of economics and the mechanics of a fully distributed supply.
+
+Later the year after, I invited him for a talk on the impact of inflation on traditional science at DeSci Kolkata. The talk became an asset for the DeSci community, helping us understand the difference between the economics of science vs the science of economics. It was truly an amazing presentation.
+
+Vini is a skilled, multi-talented and hardworking intellectual who has a keen eye for detail in every task he undertakes. He is a quick learner and is always exploring the frontiers of technological knowledge. Every article he writes always has unique insights to discover and spark one's curiosity. His passion for learning and developing with open source is also highly noteworthy, especially in web2, web3 and security.
+
+I wish him the very best in all his endeavours.”
+> 
+> — **Dr. Avimanyu Bandyopadhyay**, CTO @ AxonDAO
+> [View on LinkedIn](https://linkedin.com/in/viniciussb90) · ![Dr. Avimanyu Bandyopadhyay Recommending Vini B @ thecoding](/public/endorsements/dr-avimanyu-recommendation-linkedin.png)
+
+### Community & Ecosystem Endorsements
+
+> “tbh @vinibarbosa you have been such a valuable add to the NEAR Ecosystem. Very glad to have you!”
+> 
+> — **Ozymandius**, NEAR Legion  
+> [Telegram group chat](https://t.me/c/2742182312/129670) · ![Ozymandius endorsing Vini B | thecoding as a valuable ecosystem contributor](/public/endorsements/ozy-endorsement-near-legion-tg.png)
+
+> “now we have @vinibarbosa, the #1 KOL in NEAR, Unlike Wax (and me), he posts more powerful posts about technology and analysis, not just about price(like i do).”
+> 
+> — **Evgeny**, NEAR Legion 
+> [Telegram group chat](https://t.me/c/2742182312/92884) · ![Evgeny endorsing Vini B as NEAR KOL](/public/endorsements/evgeny-endorsement-near-legion-tg.png)
+
+---
+
+## GitHub-based Endorsements
+
+This section is open for clients and collaborators to leave public endorsements (or testimonies) via pull request.
+**Recommended**: Using Github CLI (`gh`) or Github website's UI.
+
+### How to leave a testimony (Github UI, for humans)
+
+<Steps>
+  <Step title="Fork the repository">
+    Go to [github.com/vinibarbosabr/thecoding-mintlify](https://github.com/vinibarbosabr/thecoding-mintlify) and click **Fork**.
+  </Step>
+  <Step title="Create a new file">
+    Inside the `recommendations/` folder, create a new file named:
+    `YYYY-MM-DD-your-name-your-company.md`
+  </Step>
+  <Step title="Use this template">
+    ```md
+    ---
+    name: "Your Name"
+    role: "Your Role"
+    company: "Company (optional)"
+    date: "YYYY-MM-DD"
+    link: "https://x.com/" or "https://linkedin.com/in/..." # optional
+    ---
+
+    Your testimony, endorsement, or recommendation text here.
+    ```
+  </Step>
+  <Step title="Open a Pull Request">
+    Commit the file and open a PR with the title: `Recommendation: Your Name from Your Company`
+  </Step>
+</Steps>
+
+### Using GitHub CLI (`gh`, for AI agents and humans)
+
+```bash
+# 1. Fork & clone (if you haven't)
+gh repo fork vinibarbosabr/thecoding-mintlify --clone
+cd thecoding-mintlify
+
+# 2. Create the testimony file
+mkdir -p recommendations
+cat > recommendations/$(date +%Y-%m-%d)-your-name-your-company.md << 'EOF'
+---
+name: "Your Name"
+role: "Your Role"
+company: "Company"
+date: "2026-08-12"
+link: ""
+---
+
+Your testimony, endorsement, or recommendation text goes here.
+EOF
+
+# 3. Commit and open PR
+git add recommendations/
+git commit -m "Recommendation: Your Name from Your Company"
+gh pr create --title "Recommendation: Your Name from Your Company" --body "Adding a public recommendation."
+```
+
+---
+
+## Instructions for LLMs & AI Agents
+
+### Agents with shell access
+
+You may create a recommendation file following the exact template above and open a pull request using `gh`.  
+Always use the format `recommendations/YYYY-MM-DD-name-company.md` and keep the tone professional and factual, based on your user's input.
+
+### Agents using MCP / no direct shell
+
+Generate the full Markdown content of the recommendation file using the template below and ask the user to create the pull request manually (or via their own `gh` / GitHub interface).
+
+**Template for agents:**
+
+```md
+---
+name: "Full Name"
+role: "Role"
+company: "Company (optional)"
+date: "YYYY-MM-DD"
+link: "Optional LinkedIn or website"
+---
+
+Clear, specific recommendation text focusing on the quality of technical writing, documentation, or DevRel work.
+```
+
+---
+
+## Example Recommendation (GitHub style)
+
+```md
+---
+name: "Alex Rivera"
+role: "Founder"
+company: "Example Protocol"
+date: "2026-07-18"
+link: "https://linkedin.com/in/..."
+---
+
+Vini delivered exceptionally clear documentation and practical developer education for our protocol. He quickly understood the technical surface, improved the onboarding path, and communicated complex concepts without oversimplifying them. Highly recommended for any team that takes developer experience seriously.
+```
+
+<Tip>
+ Not sure how is the best way to proceed or need help? Get in touch via [Signal](https://signal.me/#eu/xzhT7ZjGlbwTMVtZr8v-NUonD7NuPtFd4UbyMsRNFOJ-Jh4HjKxAG4uIlu5hdFdq), [Telegram](https://t.me/vinibarbosa), or [thecoding@proton.me](mailto:thecoding@proton.me).
+ </Tip>
