@@ -1,0 +1,145 @@
+---
+title: "Stake with thecoding"
+description: "How to stake NEAR with thecoding.pool.near using near-cli-rs or popular wallets."
+sidebarTitle: "Stake with thecoding"
+---
+
+# Stake with thecoding
+
+Support the network and earn staking rewards by delegating to **`thecoding.pool.near`**.
+
+<Tip>
+  An easier one-click staking experience is coming soon. Until then, use the methods below.
+</Tip>
+
+---
+
+## Option 1 — near-cli-rs (recommended for advanced users)
+
+### 1. Install near-cli-rs
+
+```bash
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/latest/download/near-cli-rs-installer.sh | sh
+```
+
+After installation, restart your terminal or run:
+
+```bash
+source $HOME/.cargo/env
+```
+
+Verify the installation:
+
+```bash
+near --version
+```
+
+### 2. Import or create your account
+
+If you already have a NEAR account, import it:
+
+```bash
+near account import-account using-seed-phrase
+```
+
+Or follow the interactive prompts with:
+
+```bash
+near
+```
+
+### 3. Stake (deposit + stake in one step)
+
+Replace `YOUR_ACCOUNT.near` and the amount:
+
+```bash
+near staking delegation YOUR_ACCOUNT.near \
+  deposit-and-stake '100 NEAR' \
+  thecoding.pool.near \
+  network-config mainnet \
+  sign-with-keychain \
+  send
+```
+
+**Example** (staking 50 NEAR):
+
+```bash
+near staking delegation alice.near \
+  deposit-and-stake '50 NEAR' \
+  thecoding.pool.near \
+  network-config mainnet \
+  sign-with-keychain \
+  send
+```
+
+### 4. Check your staked balance
+
+```bash
+near staking delegation YOUR_ACCOUNT.near \
+  view-balance thecoding.pool.near \
+  network-config mainnet \
+  now
+```
+
+---
+
+## Option 2 — Meteor Wallet (and most browser / mobile wallets)
+
+This works with **Meteor Wallet**, MyNearWallet, and most wallets that support NEAR staking.
+
+<Steps>
+  <Step title="Open your wallet">
+    Open Meteor Wallet (extension, web, or mobile app) or any compatible NEAR wallet.
+  </Step>
+
+  <Step title="Go to Staking">
+    Click **Stake** (or **Earn** / **Staking**) from the home screen.
+  </Step>
+
+  <Step title="Create new staking / Select validator">
+    Choose **Create new staking** or **Select validator**.
+  </Step>
+
+  <Step title="Search for thecoding">
+    In the search box, type:
+
+    ```text
+    thecoding.pool.near
+    ```
+
+    Select **thecoding.pool.near** from the results.  
+    Double-check the exact pool ID before confirming.
+  </Step>
+
+  <Step title="Enter amount and confirm">
+    Enter how much NEAR you want to stake (leave a small amount for future transaction fees), then confirm the transaction in your wallet.
+  </Step>
+</Steps>
+
+---
+
+## Useful information
+
+| Item | Details |
+|------|---------|
+| **Pool ID** | `thecoding.pool.near` |
+| **Network** | Mainnet |
+| **Rewards** | Start accruing after the next epoch (~12 hours) |
+| **Unstaking** | Requires a waiting period (usually ~2–4 epochs / ~24–48 hours) before withdrawal |
+
+### View pool on explorers
+
+- [NearBlocks – thecoding.pool.near](https://nearblocks.io/address/thecoding.pool.near)
+- [Pikespeak](https://pikespeak.ai/) or other NEAR explorers
+
+---
+
+## Coming soon
+
+A simple staking interface will be added to this site so you can delegate with fewer steps. Until then, the methods above are the recommended ways to stake with `thecoding.pool.near`.
+
+<Tip>
+  Questions? Reach out via [Signal](https://signal.me/#eu/xzhT7ZjGlbwTMVtZr8v-NUonD7NuPtFd4UbyMsRNFOJ-Jh4HjKxAG4uIlu5hdFdq), [Telegram](https://t.me/vinibarbosa), or [thecoding@proton.me](mailto:thecoding@proton.me).
+</Tip>
+```
+

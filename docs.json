@@ -41,6 +41,7 @@
         "group": "Connect",
         "pages": [
           "contact",
+          "staking",
           "terms"
         ]
       }
