@@ -42,6 +42,7 @@ I wish him the very best in all his endeavours.”
 ## GitHub-based Endorsements
 
 This section is open for clients and collaborators to leave public endorsements (or testimonies) via pull request.
+
 **Recommended**: Using Github CLI (`gh`) or Github website's UI.
 
 ### How to leave a testimony (Github UI, for humans)
@@ -74,12 +75,15 @@ This section is open for clients and collaborators to leave public endorsements 
 
 ### Using GitHub CLI (`gh`, for AI agents and humans)
 
+<Steps>
+<Step title="Fork & clone">
 ```bash
-# 1. Fork & clone (if you haven't)
 gh repo fork vinibarbosabr/thecoding-mintlify --clone
 cd thecoding-mintlify
-
-# 2. Create the testimony file
+```
+</Step>
+<Step title="Create the testimony file">
+```bash
 mkdir -p recommendations
 cat > recommendations/$(date +%Y-%m-%d)-your-name-your-company.md << 'EOF'
 ---
@@ -92,13 +96,16 @@ link: ""
 
 Your testimony, endorsement, or recommendation text goes here.
 EOF
-
-# 3. Commit and open PR
+```
+</Step>
+<Step title="Commit and open PR">
+```bash
 git add recommendations/
 git commit -m "Recommendation: Your Name from Your Company"
 gh pr create --title "Recommendation: Your Name from Your Company" --body "Adding a public recommendation."
 ```
-
+</Step>
+</Steps>
 ---
 
 ## Instructions for LLMs & AI Agents
