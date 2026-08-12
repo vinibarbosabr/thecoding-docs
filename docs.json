@@ -92,5 +92,17 @@
       "github": "https://github.com/vinibarbosabr",
       "linkedin": "https://linkedin.com/company/thecoding"
     }
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "canonical": "https://thecoding.dev",
+      "og:site_name": "thecoding",
+      "twitter:card": "summary_large_image",
+      "twitter:site": "@vinibarbosabr"
+    }
+  },
+  "metadata": {
+    "timestamp": true
   }
 }
