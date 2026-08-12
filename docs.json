@@ -49,12 +49,12 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Personal Portfolio",
-          "href": "https://vinib.github.io",
+          "anchor": "Personal Account",
+          "href": "https://x.com/vinibarbosabr",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Substack",
+          "anchor": "Substack Publication",
           "href": "https://thecoding.substack.com",
           "icon": "newspaper"
         }
@@ -70,8 +70,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Git Repository",
+      "href": "https://github.com/vinibarbosabr/thecoding-docs"
     }
   },
   "contextual": {

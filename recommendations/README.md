@@ -33,4 +33,4 @@ Be specific about the work (technical writing, documentation, DevRel, workshops,
 2. Add your file inside the recommendations/ folder
 3. Open a Pull Request with the title: Recommendation: Your Name
 
-You can also use the GitHub CLI (gh) — see the [Endorsements page](https://github.com/vinibarbosabr/thecoding-mintlify/endorsements.mdx) for the exact commands.
+You can also use the GitHub CLI (gh) — see the [Endorsements page](https://github.com/vinibarbosabr/thecoding-docs/endorsements.mdx) for the exact commands.
