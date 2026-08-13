@@ -30,12 +30,19 @@ The site also hosts selected portfolio work, open recommendations from clients/p
 ├── docs.json              # Mintlify configuration (navigation, theme, colors, footer)
 ├── index.mdx              # About / Welcome
 ├── quickstart.mdx         # How to start a project
-├── technical-writing.mdx  # Sponsored content lane (to be expanded)
-├── documentation.mdx      # Docs engineering lane (to be expanded)
-├── devrel.mdx             # DevRel lane (to be expanded)
+├── pricing.mdx            # Pricing terms and fixed rates table
+├── technical-writing.mdx  # Sponsored content lane
+├── documentation.mdx      # Docs engineering lane
+├── devrel.mdx             # DevRel lane
+├── resume.mdx             # Vini B professional resume & portfolio
+├── endorsements.mdx       # Public recommendations, testimonies, and endorsements
+├── contact.mdx            # Contact links (Signal, Telegram, Email) and form
+├── staking.mdx            # Guide on how to stake NEAR with thecoding.pool.near
+├── terms.mdx              # Terms of service
+├── recommendations/       # Hidden directory to store and fetch all public recommendations
 ├── public/                # Static assets (images, banners)
 ├── logo/                  # Light & dark logos
-└── README.md
+└── README.md              # <-- You are here!
 ```
 
 Navigation is defined in `docs.json`. New pages are added as `.mdx` files and registered in the navigation groups.
@@ -85,6 +92,7 @@ Clients and partners can leave public recommendations by opening a Pull Request.
 - Role / relationship
 - Short testimonial (2-6 sentences)
 - Optional: link to the related work or project
+
 1. Open a PR with a clear title, e.g. `recommendation: [Project Name]`.
 
 Recommendations are reviewed and merged. Once merged, they appear on the public **Recommendations & Endorsements** page.
