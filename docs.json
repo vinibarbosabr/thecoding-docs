@@ -19,7 +19,8 @@
         "group": "Welcome",
         "pages": [
           "index",
-          "quickstart"
+          "quickstart",
+          "pricing"
         ]
       },
       {
