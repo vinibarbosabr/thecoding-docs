@@ -1,0 +1,37 @@
+name: Question
+description: Ask a question about thecoding.dev, the services, or the content.
+title: "Question: [short description]"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Have a question? ❓
+
+        Ask away. For **business / engagement inquiries** (starting a project, pricing, partnerships), you'll get the fastest answer via the [Contact page](https://thecoding.dev/contact).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+      placeholder: "Example: Do you also offer documentation maintenance as an ongoing retainer?"
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Context (optional)
+      description: Anything that helps me answer, like your role or what you're working on.
+      placeholder: "Example: I lead a small Web3 startup evaluating docs help."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        Thanks! I'll get back to you here. For anything time-sensitive, use the [Contact page](https://thecoding.dev/contact).

@@ -1,0 +1,48 @@
+name: Improvement / Enhancement
+description: Suggest an improvement to the content, documentation, or site.
+title: "Improvement: [short description]"
+labels: ["improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for the suggestion! 💡
+
+        Share what you'd improve and why. This helps the docs and site get better for everyone.
+
+  - type: input
+    id: area
+    attributes:
+      label: What would you improve?
+      description: The page, section, or aspect of the site you have in mind.
+      placeholder: "Example: the Documentation Engineering quickstart"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion
+      description: Describe the change and the reason behind it.
+      placeholder: |
+        Example: "The quickstart would be clearer if it explained the docs-as-code workflow with a short diagram before the commands."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example (optional)
+      description: Any example, wording, or reference that would help.
+      placeholder: "A link, a draft sentence, or a reference page."
+      render: markdown
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        Thanks! I'll review the suggestion and let you know if it's taken on board.
