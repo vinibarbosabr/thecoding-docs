@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a bug, broken link, rendering error, or typo on thecoding.dev.
+title: "Bug: [short description]"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for reporting! 🐞
+
+        Help me fix it quickly by filling in the details below. Please avoid including any confidential information.
+
+  - type: input
+    id: where
+    attributes:
+      label: Where did you find the problem?
+      description: The page URL or section of the site, and the specific element if relevant.
+      placeholder: "Example: https://thecoding.dev/documentation — the intro paragraph"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: Describe what you see, and what you expected instead.
+      placeholder: |
+        Example: "The link to the pricing section returns a 404 page. I expected it to open the pricing page."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can I reproduce it? (optional)
+      description: Steps to see the problem, or the device/browser you were using.
+      placeholder: |
+        Example: "1. Go to the homepage
+        2. Click the Pricing link
+        3. A 404 page appears"
+      render: markdown
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        Thanks! I'll take a look and let you know when it's fixed.

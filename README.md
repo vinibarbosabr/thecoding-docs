@@ -39,7 +39,6 @@ The site also hosts selected portfolio work, open recommendations from clients/p
 ├── contact.mdx            # Contact links (Signal, Telegram, Email) and form
 ├── staking.mdx            # Guide on how to stake NEAR with thecoding.pool.near
 ├── terms.mdx              # Terms of service
-├── recommendations/       # Hidden directory to store and fetch all public recommendations
 ├── public/                # Static assets (images, banners)
 ├── logo/                  # Light & dark logos
 └── README.md              # <-- You are here!
@@ -82,21 +81,14 @@ This repository is public by design and follows Free (Libre) Open-Source Softwar
 
 ### Recommendations & Endorsements
 
-Clients and partners can leave public recommendations by opening a Pull Request.
+Clients, collaborators, and community members can leave public recommendations via a **GitHub issue form** — no fork or pull request needed.
 
-1. Fork the repository (or create a branch if you have write access).
-2. Add a new file under a `recommendations/` folder (or follow the template on the site).
-3. Include:
+1. Open the issue form:
+   `https://github.com/vinibarbosabr/thecoding-docs/issues/new?template=endorsement.yml`
+2. Fill in the short form with your name, role, company/project, an optional link, and your recommendation (2–6 sentences).
+3. Hit submit.
 
-- Your name / project
-- Role / relationship
-- Short testimonial (2-6 sentences)
-- Optional: link to the related work or project
-
-1. Open a PR with a clear title, e.g. `recommendation: [Project Name]`.
-
-Recommendations are reviewed and merged. Once merged, they appear on the public **Recommendations & Endorsements** page.
-A simpler form-based flow may be added later. For now, the pure Github PR approach keeps everything transparent and version-controlled.
+Approved recommendations are published to the public **Recommendations & Endorsements** page and the issue is then closed.
 
 ### Other Contributions
 

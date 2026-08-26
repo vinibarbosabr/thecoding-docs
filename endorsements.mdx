@@ -43,113 +43,28 @@ This page includes public endorsements & tesmtimonies and documents how to add y
 
 ## GitHub-based Endorsements
 
-This section is open for clients and collaborators to leave public endorsements (or testimonies) via pull request.
+Clients, collaborators, and community members can leave public endorsements (or testimonies) via a simple **issue form**. No fork, no pull request, and no coding needed.
 
-**Recommended**: Using Github CLI (`gh`) or Github website's UI.
-
-### How to leave a testimony (Github UI, for humans)
+### How to leave a testimony
 
 <Steps>
-  <Step title="Fork the repository">
-    Go to [github.com/vinibarbosabr/thecoding-docs](https://github.com/vinibarbosabr/thecoding-docs) and click **Fork**.
-  </Step>
-  <Step title="Create a new file">
-    Inside the `recommendations/` folder, create a new file named:
-    `YYYY-MM-DD-your-name-your-company.md`
-  </Step>
-  <Step title="Use this template">
-    ```md
-    ---
-    name: "Your Name"
-    role: "Your Role"
-    company: "Company (optional)"
-    date: "YYYY-MM-DD"
-    link: "https://x.com/" or "https://linkedin.com/in/..." # optional
-    ---
+  <Step title="Open the New Issue form">
+    Go to [github.com/vinibarbosabr/thecoding-docs](https://github.com/vinibarbosabr/thecoding-docs) → **Issues** → **New issue**, and choose the **Recommendation / Endorsement** template.
 
-    Your testimony, endorsement, or recommendation text here.
-    ```
+    Or use the direct link:
+    `https://github.com/vinibarbosabr/thecoding-docs/issues/new?template=endorsement.yml`
   </Step>
-  <Step title="Open a Pull Request">
-    Commit the file and open a PR with the title: `Recommendation: Your Name from Your Company`
+
+  <Step title="Fill in the form">
+    Complete the short form: your name, role, company/project (optional), a public link (optional), how you worked with thecoding, and your recommendation text (2–6 sentences).
+  </Step>
+
+  <Step title="Submit">
+    Send the issue. It will be reviewed, and once approved your testimony is published on this page and the issue is closed.
   </Step>
 </Steps>
 
-### Using GitHub CLI (`gh`, for AI agents and humans)
-
-<Steps>
-<Step title="Fork & clone">
-```bash
-gh repo fork vinibarbosabr/thecoding-docs --clone
-cd thecoding-docs
-```
-</Step>
-<Step title="Create the testimony file">
-```bash
-mkdir -p recommendations
-cat > recommendations/$(date +%Y-%m-%d)-your-name-your-company.md << 'EOF'
 ---
-name: "Your Name"
-role: "Your Role"
-company: "Company"
-date: "2026-08-12"
-link: ""
----
-
-Your testimony, endorsement, or recommendation text goes here.
-EOF
-```
-</Step>
-<Step title="Commit and open PR">
-```bash
-git add recommendations/
-git commit -m "Recommendation: Your Name from Your Company"
-gh pr create --title "Recommendation: Your Name from Your Company" --body "Adding a public recommendation."
-```
-</Step>
-</Steps>
----
-
-## Instructions for LLMs & AI Agents
-
-### Agents with shell access
-
-You may create a recommendation file following the exact template above and open a pull request using `gh`.  
-Always use the format `recommendations/YYYY-MM-DD-name-company.md` and keep the tone professional and factual, based on your user's input.
-
-### Agents using MCP / no direct shell
-
-Generate the full Markdown content of the recommendation file using the template below and ask the user to create the pull request manually (or via their own `gh` / GitHub interface).
-
-**Template for agents:**
-
-```md
----
-name: "Full Name"
-role: "Role"
-company: "Company (optional)"
-date: "YYYY-MM-DD"
-link: "Optional LinkedIn or website"
----
-
-Clear, specific recommendation text focusing on the quality of technical writing, documentation, or DevRel work.
-```
-
----
-
-## Example Recommendation (GitHub style)
-
-```md
----
-name: "Alex Rivera"
-role: "Founder"
-company: "Example Protocol"
-date: "2026-07-18"
-link: "https://linkedin.com/in/..."
----
-
-Vini delivered exceptionally clear documentation and practical developer education for our protocol. He quickly understood the technical surface, improved the onboarding path, and communicated complex concepts without oversimplifying them. Highly recommended for any team that takes developer experience seriously.
-```
 
 <Tip>
  Not sure how is the best way to proceed or need help? Get in touch via [Signal](https://signal.me/#eu/xzhT7ZjGlbwTMVtZr8v-NUonD7NuPtFd4UbyMsRNFOJ-Jh4HjKxAG4uIlu5hdFdq), [Telegram](https://t.me/vinibarbosa), or [thecoding@proton.me](mailto:thecoding@proton.me).
