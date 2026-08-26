@@ -1,0 +1,87 @@
+name: Endorsement (Recommendation / Testimony)
+description: Leave a public endorsement, recommendation, or testimony for Vini B | thecoding.
+title: "Recommendation: [Your Name] from [Your Company/Project]"
+labels: ["endorsement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for leaving a recommendation! 👋
+
+        Please fill in the short form below. It only takes a couple of minutes, and after review your testimony will be published on the [Recommendations & Endorsements](https://thecoding.dev/endorsements) page.
+
+        - Do **not** include any confidential or private information.
+        - Keep it factual and specific about the work (technical writing, documentation, DevRel, workshops, etc.).
+        - You do not need any technical or GitHub skills — just fill the fields.
+
+  - type: input
+    id: name
+    attributes:
+      label: Your full name
+      description: How you want to be publicly credited.
+      placeholder: "Example: Alice"
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Your role
+      description: Your title or relationship to the work (founder, CTO, engineering lead, collaborator, etc.).
+      placeholder: "Example: Founder & CEO"
+    validations:
+      required: true
+
+  - type: input
+    id: company
+    attributes:
+      label: Company / project (optional)
+      description: The company, protocol, or community you represent.
+      placeholder: "Example: Example Protocol"
+    validations:
+      required: false
+
+  - type: input
+    id: link
+    attributes:
+      label: Link (optional)
+      description: A public link to share, such as an X/LinkedIn profile or project/company website.
+      placeholder: "Example: https://x.com/alice"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: How did you work with Vini B | thecoding?
+      description: Select the service lane that best matches the work we did together.
+      multiple: false
+      options:
+        - Sponsored Technical Content
+        - Documentation Engineering
+        - DevRel / Workshops / Talks
+        - OSS Contribution
+        - Security Research
+        - News Covering / Press Releases
+        - Consulting
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: testimony
+    attributes:
+      label: Your recommendation
+      description: A short, specific recommendation (2–6 sentences). Mention what was delivered and the impact.
+      placeholder: |
+        Example: "Vini delivered exceptionally clear documentation and practical developer education for our protocol. He quickly understood the technical surface, improved the onboarding path, and communicated complex concepts without oversimplifying them. We reduced dev-support tickets by 10% in 30 days after the work."
+      render: markdown
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        Thank you! Once submitted, the issue will be reviewed. When it's approved and published, this issue will be closed.
