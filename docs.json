@@ -58,6 +58,11 @@
           "anchor": "Substack Publication",
           "href": "https://thecoding.substack.com",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "Stake NEAR with thecoding",
+          "href": "https://app.thecoding.dev",
+          "icon": "hand-holding-dollar"
         }
       ]
     }
