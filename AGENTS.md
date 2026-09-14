@@ -10,7 +10,7 @@
 ## Active work: 2026-09 buyer-path docs overhaul
 
 This overhaul doubles as a public docs-as-code case study for thecoding.dev.
-Brief and progress log: `internal/OVERHAUL.md` (gitignored, kept out of the public repo so the inventory can include sensitive details). Public tracking: [milestone 1 — Overhaul: buyer path (2026-09)](https://github.com/vinibarbosabr/thecoding-docs/milestone/1) · starter issue #4 · per-phase follow-on issues.
+Brief and progress log: `internal/OVERHAUL.md` (gitignored, kept out of the public repo). Public tracking: [milestone 1 — Overhaul: buyer path (2026-09)](https://github.com/vinibarbosabr/thecoding-docs/milestone/1) · starter issue #4 · per-phase follow-on issues.
 
 Roadmap checklist — a phase starts only when the previous phase's exit criteria are met:
 
@@ -36,7 +36,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 ## Public vs internal
 
 - Everything tracked in git is public (`AGENTS.md`, all MDX) — write accordingly
-- Sensitive, security-related, or negative-connotation notes belong in `internal/` (gitignored)
+- Sensitive, security-related, or internal-only notes belong in `internal/` (gitignored)
 - Never commit secrets, keys, private client data, or NDA-restricted details (anonymize or omit)
 
 ## Terminology
@@ -55,4 +55,4 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 
 - This is a contractor sales site, not a blog or CV: nav matches the offer
 - The staking page serves existing delegators; it stays out of the sales path and sales copy
-- Security-research framing is limited to writing and postmortems; never sell audits
+- Security-research framing is limited to writing and postmortems; not selling audits
