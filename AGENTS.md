@@ -16,12 +16,12 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 
 - [x] Phase 0 — Setup: branch, brief (`internal/OVERHAUL.md`), success test, scope freeze, repo audit
 - [x] Phase 1 — Briefing: audience, job-to-be-done, primary CTA, cut list, non-goals
-- [ ] Phase 2 — Inventory & audit: page-by-page buyer-job table + proof inventory (no copy rewrites)
+- [x] Phase 2 — Inventory & audit: page-by-page buyer-job table + proof inventory (no copy rewrites) *(issue #6)*
 - [ ] Phase 3 — Source of truth: freeze positioning, lane names, SKUs, forbidden phrases, CTA model
 - [ ] Phase 4 — Information architecture: `docs.json` nav only, navbar CTA swap
 - [ ] Phase 5 — Proof: new `/work` page (≥3 honest cards) + endorsements cleanup
-- [ ] Phase 6 — Conversion path: pricing → quickstart → contact → service pages → home (last) → demote the rest
-- [ ] Phase 7 — Chrome & consistency: shared CTAs, metadata, links, llms.txt, full QA click-through
+- [ ] Phase 6 — Conversion path: pricing → quickstart → contact → service pages (`developer-education.mdx`) → home (last) → demote the rest
+- [ ] Phase 7 — Chrome & consistency: shared CTAs, metadata, links, create `llms.txt`, verify redirects, mobile nav QA, full QA click-through
 - [ ] Phase 8 — Revision & ship: revision pass against the brief, release to `main`, handoff note
 
 ## How we work
@@ -30,7 +30,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - Conventional commit prefixes: `docs:`, `feat:`, `fix:`, `chore:`
 - No unpublished claims: only state what the proof inventory allows
 - Inventory before adjectives; structure before sentences; pricing and quickstart before the homepage
-- Every old URL must keep working; this run changes titles, not slugs
+- Every old URL must keep working; this run changes titles, not slugs, with one sanctioned exception: the Developer Education merge (`/devrel` + `/technical-writing` → `/developer-education`, with redirects)
 - Keep a clean paper trail: the PR history is part of the public case study
 
 ## Public vs internal
@@ -42,6 +42,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 ## Terminology
 
 - Lane and SKU names are frozen in Phase 3 (`internal/source-of-truth.md` once it exists); until then, do not rename lanes or SKUs in copy
+- Decided 2026-09-23: target shape is **two commercial lanes** — Documentation Engineering and **Developer Education** (merge of technical-writing + devrel). `Technical Education` stays a product name, never a lane. Details in `internal/OVERHAUL.md` decision log
 - Primary action is a **briefing** (send a brief / book 20 minutes), not a "call" or "chat"
 
 ## Style preferences
