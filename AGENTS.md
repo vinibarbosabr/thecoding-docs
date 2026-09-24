@@ -51,6 +51,10 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - Sentence case for headings; bold for UI elements (Click **Settings**); code formatting for file names, commands, paths
 - Frontmatter `title` is the page header — do not add a duplicate manual H1 (convention normalized in Phase 6–7)
 - Lead with the job and the work, not biography or audience-size claims
+- No em dashes (`—`) in copy: use commas, colons, periods, or restructure the sentence
+- Simple, clear language; short sentences; no heavy jargon, copy-heavy tone, or ad-like urgency
+- No reach or engagement numbers (followers, subscribers, likes, views, attendees) in sales or proof copy; deliverable counts (words, issues, PRs) are fine
+- Conversion comes from clarity and proof, never pressure; the reader is technical
 
 ## Content boundaries
 
