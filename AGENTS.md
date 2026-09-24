@@ -17,7 +17,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - [x] Phase 0 — Setup: branch, brief (`internal/OVERHAUL.md`), success test, scope freeze, repo audit
 - [x] Phase 1 — Briefing: audience, job-to-be-done, primary CTA, cut list, non-goals
 - [x] Phase 2 — Inventory & audit: page-by-page buyer-job table + proof inventory (no copy rewrites) *(issue #6)*
-- [ ] Phase 3 — Source of truth: freeze positioning, lane names, SKUs, forbidden phrases, CTA model
+- [x] Phase 3 — Source of truth: freeze positioning, lane names, SKUs, forbidden phrases, CTA model
 - [ ] Phase 4 — Information architecture: `docs.json` nav only, navbar CTA swap
 - [ ] Phase 5 — Proof: new `/work` page (≥3 honest cards) + endorsements cleanup
 - [ ] Phase 6 — Conversion path: pricing → quickstart → contact → service pages (`developer-education.mdx`) → home (last) → demote the rest
