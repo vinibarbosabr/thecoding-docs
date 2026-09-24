@@ -52,6 +52,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - Frontmatter `title` is the page header — do not add a duplicate manual H1 (convention normalized in Phase 6–7)
 - Lead with the job and the work, not biography or audience-size claims
 - No em dashes (`—`) in copy: use commas, colons, periods, or restructure the sentence
+- Frontmatter `description` serves search and link previews; the page's opening lines must add context, not repeat the description
 - Simple, clear language; short sentences; no heavy jargon, copy-heavy tone, or ad-like urgency
 - No reach or engagement numbers (followers, subscribers, likes, views, attendees) in sales or proof copy; deliverable counts (words, issues, PRs) are fine
 - Conversion comes from clarity and proof, never pressure; the reader is technical
