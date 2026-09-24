@@ -11,8 +11,8 @@ body:
         Please fill in the short form below. It only takes a couple of minutes, and after review your testimony will be published on the [Recommendations & Endorsements](https://thecoding.dev/endorsements) page.
 
         - Do **not** include any confidential or private information.
-        - Keep it factual and specific about the work (technical writing, documentation, DevRel, workshops, etc.).
-        - You do not need any technical or GitHub skills — just fill the fields.
+        - Keep it factual and specific about the work (documentation, technical content, workshops, etc.).
+        - You do not need any technical or GitHub skills, just fill the fields.
 
   - type: input
     id: name
@@ -57,11 +57,11 @@ body:
       description: Select the service lane that best matches the work we did together.
       multiple: false
       options:
-        - Sponsored Technical Content
         - Documentation Engineering
-        - DevRel / Workshops / Talks
+        - Developer Education (articles, tutorials, onboarding)
+        - Workshops, Talks & Events
+        - Sponsored Technical Content
         - OSS Contribution
-        - Security Research
         - News Covering / Press Releases
         - Consulting
         - Other
