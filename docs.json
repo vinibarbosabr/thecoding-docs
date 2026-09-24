@@ -16,7 +16,7 @@
   "navigation": {
     "pages": [
       {
-        "group": "Welcome",
+        "group": "Start",
         "pages": [
           "index",
           "quickstart",
@@ -24,26 +24,21 @@
         ]
       },
       {
-        "group": "Services",
+        "group": "Work",
         "pages": [
-          "technical-writing",
-          "documentation",
-          "devrel"
-        ]
-      },
-      {
-        "group": "Proof of Work",
-        "pages": [
-          "resume",
           "endorsements"
         ]
       },
       {
-        "group": "Connect",
+        "group": "Services",
         "pages": [
-          "contact",
-          "staking",
-          "terms"
+          "documentation"
+        ]
+      },
+      {
+        "group": "Engage",
+        "pages": [
+          "contact"
         ]
       }
     ],
@@ -62,17 +57,27 @@
       ]
     }
   },
+  "redirects": [
+    {
+      "source": "/devrel",
+      "destination": "/developer-education"
+    },
+    {
+      "source": "/technical-writing",
+      "destination": "/developer-education"
+    }
+  ],
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:thecoding@proton.me"
+        "label": "Book a 20-minute briefing",
+        "href": "https://cal.com/vinib"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Git Repository",
-      "href": "https://github.com/vinibarbosabr/thecoding-docs"
+      "label": "Send a brief",
+      "href": "/contact"
     }
   },
   "contextual": {
@@ -92,7 +97,26 @@
       "x": "https://x.com/vinibarbosabr",
       "github": "https://github.com/vinibarbosabr",
       "linkedin": "https://linkedin.com/company/thecoding"
-    }
+    },
+    "links": [
+      {
+        "header": "More",
+        "items": [
+          {
+            "label": "Resume",
+            "href": "/resume"
+          },
+          {
+            "label": "Staking",
+            "href": "/staking"
+          },
+          {
+            "label": "Terms",
+            "href": "/terms"
+          }
+        ]
+      }
+    ]
   },
   "seo": {
     "indexing": "navigable",
