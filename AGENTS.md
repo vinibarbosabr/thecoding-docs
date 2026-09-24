@@ -19,7 +19,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - [x] Phase 2 — Inventory & audit: page-by-page buyer-job table + proof inventory (no copy rewrites) *(issue #6)*
 - [x] Phase 3 — Source of truth: freeze positioning, lane names, SKUs, forbidden phrases, CTA model
 - [x] Phase 4 — Information architecture: `docs.json` nav only, navbar CTA swap *(issue #8)*
-- [ ] Phase 5 — Proof: new `/work` page (≥3 honest cards) + endorsements cleanup
+- [x] Phase 5 — Proof: new `/work` page (≥3 honest cards) + endorsements cleanup *(issue #9)*
 - [ ] Phase 6 — Conversion path: pricing → quickstart → contact → service pages (`developer-education.mdx`) → home (last) → demote the rest
 - [ ] Phase 7 — Chrome & consistency: shared CTAs, metadata, links, create `llms.txt`, verify redirects, mobile nav QA, full QA click-through
 - [ ] Phase 8 — Revision & ship: revision pass against the brief, release to `main`, handoff note
