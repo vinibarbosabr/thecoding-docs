@@ -15,7 +15,7 @@ body:
     attributes:
       label: Where did you find the problem?
       description: The page URL or section of the site, and the specific element if relevant.
-      placeholder: "Example: https://thecoding.dev/documentation — the intro paragraph"
+      placeholder: "Example: https://thecoding.dev/documentation (the intro paragraph)"
     validations:
       required: true
 

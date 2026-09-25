@@ -1,5 +1,5 @@
-name: Endorsement (Recommendation / Testimony)
-description: Leave a public endorsement, recommendation, or testimony for Vini B | thecoding.
+name: Endorsement (Recommendation)
+description: Leave a public endorsement or recommendation for Vini B | thecoding.
 title: "Recommendation: [Your Name] from [Your Company/Project]"
 labels: ["endorsement"]
 body:
@@ -8,7 +8,7 @@ body:
       value: |
         ## Thanks for leaving a recommendation! 👋
 
-        Please fill in the short form below. It only takes a couple of minutes, and after review your testimony will be published on the [Recommendations & Endorsements](https://thecoding.dev/endorsements) page.
+        Please fill in the short form below. It only takes a couple of minutes, and after review your endorsement will be published on the [Recommendations & Endorsements](https://thecoding.dev/endorsements) page.
 
         - Do **not** include any confidential or private information.
         - Keep it factual and specific about the work (documentation, technical content, workshops, etc.).
@@ -69,7 +69,7 @@ body:
       required: true
 
   - type: textarea
-    id: testimony
+    id: endorsement
     attributes:
       label: Your recommendation
       description: A short, specific recommendation (2–6 sentences). Mention what was delivered and the impact.

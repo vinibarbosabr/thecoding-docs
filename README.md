@@ -11,13 +11,12 @@ It is built with [Mintlify](https://mintlify.com) using the **Palm** theme and f
 
 ## What is thecoding?
 
-**thecoding** is the independent contractor brand of Vini Barbosa (Vini B) — a technical writer, documentation engineer, developer relations partner, and security researcher focused on blockchain and Web3.
+**thecoding** is the independent contractor brand of Vini Barbosa (Vini B). I turn complex developer and security topics into content people understand, use, and share. The focus is blockchain and Web3.
 
 Main service lanes:
 
-- **Sponsored Technical Content** — deep research articles, tutorials, and educational material published on thecoding channels (Substack + X + LinkedIn).
-- **Documentation Engineering** — docs audits, focused sprints, full overhauls, and ongoing docs ownership (docs-as-code).
-- **DevRel Partner** — workshops, talks, community support, and developer education.
+- **Documentation Engineering**: docs audits, focused rebuilds, and ongoing docs ownership, delivered docs-as-code.
+- **Developer Education**: tutorials, technical articles, learning series, workshops, onboarding paths, and education-shaped DevRel. Sponsored Technical Content is a delivery model under this lane.
 
 The site also hosts selected portfolio work, open recommendations from clients/partners, and practical entry points to start a project.
 
@@ -28,14 +27,14 @@ The site also hosts selected portfolio work, open recommendations from clients/p
 ```text
 .
 ├── docs.json              # Mintlify configuration (navigation, theme, colors, footer)
-├── index.mdx              # About / Welcome
+├── index.mdx              # Home
 ├── quickstart.mdx         # How to start a project
 ├── pricing.mdx            # Pricing terms and fixed rates table
-├── technical-writing.mdx  # Sponsored content lane
-├── documentation.mdx      # Docs engineering lane
-├── devrel.mdx             # DevRel lane
+├── documentation.mdx      # Documentation Engineering lane
+├── developer-education.mdx # Developer Education lane
+├── work.mdx               # Selected work and case cards
 ├── resume.mdx             # Vini B professional resume & portfolio
-├── endorsements.mdx       # Public recommendations, testimonies, and endorsements
+├── endorsements.mdx       # Public recommendations and endorsements
 ├── contact.mdx            # Contact links (Signal, Telegram, Email) and form
 ├── staking.mdx            # Guide on how to stake NEAR with thecoding.pool.near
 ├── terms.mdx              # Terms of service
@@ -81,7 +80,7 @@ This repository is public by design and follows Free (Libre) Open-Source Softwar
 
 ### Recommendations & Endorsements
 
-Clients, collaborators, and community members can leave public recommendations via a **GitHub issue form** — no fork or pull request needed.
+Clients, collaborators, and community members can leave public recommendations via a **GitHub issue form**. No fork or pull request is needed.
 
 1. Open the issue form:
    `https://github.com/vinibarbosabr/thecoding-docs/issues/new?template=endorsement.yml`
@@ -100,7 +99,7 @@ Bug reports, typos, broken links, and small improvements are highly welcome via 
 - X: [@vinibarbosabr](https://x.com/vinibarbosabr)
 - Signal: [@vinib90](https://signal.me/#eu/xzhT7ZjGlbwTMVtZr8v-NUonD7NuPtFd4UbyMsRNFOJ-Jh4HjKxAG4uIlu5hdFdq)
 - Telegram: [@vinibarbosa](https://t.me/vinibarbosa)
-- Book a call: [CalCom/vinib](https://cal.com/vinib)
+- Book a 20-minute briefing: [CalCom/vinib](https://cal.com/vinib)
 
 ## License
 
