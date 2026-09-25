@@ -33,7 +33,8 @@
       {
         "group": "Services",
         "pages": [
-          "documentation"
+          "documentation",
+          "developer-education"
         ]
       },
       {
