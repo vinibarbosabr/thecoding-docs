@@ -35,7 +35,7 @@ The site also hosts selected portfolio work, open recommendations from clients/p
 ├── work.mdx               # Selected work and case cards
 ├── resume.mdx             # Vini B professional resume & portfolio
 ├── endorsements.mdx       # Public recommendations and endorsements
-├── contact.mdx            # Contact links (Signal, Telegram, Email) and form
+├── contact.mdx            # Paste-ready brief template and contact links (Signal, Telegram, Email)
 ├── staking.mdx            # Guide on how to stake NEAR with thecoding.pool.near
 ├── terms.mdx              # Terms of service
 ├── public/                # Static assets (images, banners)
