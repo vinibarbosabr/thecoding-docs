@@ -21,7 +21,7 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 - [x] Phase 4 — Information architecture: `docs.json` nav only, navbar CTA swap *(issue #8)*
 - [x] Phase 5 — Proof: new `/work` page (≥3 honest cards) + endorsements cleanup *(issue #9)*
 - [x] Phase 5.5 — Resume: `resume.mdx` rewrite (0xramp docs + SDK lead entry, since-2020 dated claims, labeled skills, CTA tail) + outreach variants in `internal/` *(issue #10)*
-- [ ] Phase 6 — Conversion path: pricing → quickstart → contact → service pages (`developer-education.mdx`) → home (last) → demote the rest
+- [x] Phase 6 — Conversion path: pricing → quickstart → contact → service pages (`developer-education.mdx`) → home (last) → demote the rest
 - [ ] Phase 7 — Chrome & consistency: shared CTAs, metadata, links, create `llms.txt`, verify redirects, mobile nav QA, full QA click-through
 - [ ] Phase 8 — Revision & ship: revision pass against the brief, release to `main`, handoff note
 
