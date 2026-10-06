@@ -1,97 +1,86 @@
-# thecoding
+# Vini B | thecoding
 
-> Services portfolio and independent contractor landing website for **Vini B | thecoding**, by **Vini Barbosa** (`@vinibarbosabr`).
+> Source of [thecoding.dev](https://thecoding.dev): Documentation Engineering and Developer Education for blockchain and web3 teams.
 
-**Live site:** [thecoding.dev](https://thecoding.dev)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fthecoding.dev)](https://thecoding.dev)
 
-This repository powers the public documentation and services site for **thecoding**.  
-It is built with [Mintlify](https://mintlify.com) using the **Palm** theme and follows a docs-as-code approach.
-
----
+![thecoding.dev banner](public/index-banner.png)
 
 ## What is thecoding?
 
-**thecoding** is the independent contractor brand of Vini Barbosa (Vini B). I turn complex developer and security topics into content people understand, use, and share. The focus is blockchain and Web3.
+**thecoding** is the independent contractor brand of Vini Barbosa (Vini B). I turn complex developer and security topics into content people understand, use, and share, with a focus on blockchain and web3.
 
-Main service lanes:
+Two service lanes:
 
 - **Documentation Engineering**: docs audits, focused rebuilds, and ongoing docs ownership, delivered docs-as-code.
 - **Developer Education**: tutorials, technical articles, learning series, workshops, onboarding paths, and education-shaped DevRel. Sponsored Technical Content is a delivery model under this lane.
 
-The site also hosts selected portfolio work, open recommendations from clients/partners, and practical entry points to start a project.
+The entry point is a [$350 Paid Discovery](https://thecoding.dev/pricing): small, reversible, and it ends with a concrete plan. The primary action is [sending a brief](https://thecoding.dev/contact) or [booking a 20-minute briefing](https://cal.com/vinib).
 
----
+## Site map
+
+| Page | What it covers |
+| --- | --- |
+| [Home](https://thecoding.dev/) | Overview of both lanes and the recommended first step |
+| [Quickstart](https://thecoding.dev/quickstart) | How to choose an entry point, send a brief, and review a statement of work |
+| [Pricing](https://thecoding.dev/pricing) | Fixed-price packages, entry points at $350 |
+| [Documentation Engineering](https://thecoding.dev/documentation) | Docs-as-code services: health checks, focused rebuilds, ongoing ownership |
+| [Developer Education](https://thecoding.dev/developer-education) | Tutorials, technical content, learning series, workshops, onboarding paths |
+| [Work](https://thecoding.dev/work) | Selected case cards with context, scope, and honest limitations |
+| [Recommendations & Endorsements](https://thecoding.dev/endorsements) | Client and collaborator feedback linked to artifacts |
+| [Contact](https://thecoding.dev/contact) | Paste-ready brief template and contact channels |
+
+AI assistants and agents can index every page through [`llms.txt`](llms.txt) ([live](https://thecoding.dev/llms.txt)).
 
 ## Repository structure
 
 ```text
 .
-├── docs.json              # Mintlify configuration (navigation, theme, colors, footer)
-├── index.mdx              # Home
-├── quickstart.mdx         # How to start a project
-├── pricing.mdx            # Pricing terms and fixed rates table
-├── documentation.mdx      # Documentation Engineering lane
+├── docs.json               # Mintlify configuration: navigation, theme, colors, redirects
+├── index.mdx               # Home
+├── quickstart.mdx          # How to start a project
+├── pricing.mdx             # Pricing terms and fixed rates
+├── documentation.mdx       # Documentation Engineering lane
 ├── developer-education.mdx # Developer Education lane
-├── work.mdx               # Selected work and case cards
-├── resume.mdx             # Vini B professional resume & portfolio
-├── endorsements.mdx       # Public recommendations and endorsements
-├── contact.mdx            # Paste-ready brief template and contact links (Signal, Telegram, Email)
-├── staking.mdx            # Guide on how to stake NEAR with thecoding.pool.near
-├── terms.mdx              # Terms of service
-├── public/                # Static assets (images, banners)
-├── logo/                  # Light & dark logos
-└── README.md              # <-- You are here!
+├── work.mdx                # Selected work and case cards
+├── endorsements.mdx        # Public recommendations
+├── contact.mdx             # Brief template and contact channels
+├── resume.mdx              # Professional resume
+├── staking.mdx             # NEAR staking guide (footer-only page)
+├── terms.mdx               # Terms of service
+├── llms.txt                # Page index for AI assistants
+├── AGENTS.md               # Working conventions for AI agents and humans
+├── public/                 # Static assets
+└── logo/                   # Light and dark logos
 ```
 
-Navigation is defined in `docs.json`. New pages are added as `.mdx` files and registered in the navigation groups.
+Pages are MDX files with YAML frontmatter. New pages must be registered in the `navigation` block of `docs.json`.
 
 ## Local development
 
-```Bash
-# Install Mintlify CLI
-npm i -g mint
+Prerequisites: Node.js (this repo pins Node 24 via [mise](https://mise.jdx.dev), the Mintlify CLI needs Node >= 18).
 
-# Run local preview (from the repo root)
-mint dev
+```bash
+# Run local preview from the repo root
+npx mint@latest dev
 ```
 
-Open <http://localhost:3000>.
+Open <http://localhost:3000>. To install the CLI globally instead: `npm i -g mint`.
 
-## How the site is updated & deployed
+## Deployment
 
-1. Make changes in this repository (edit .mdx files or docs.json).
-2. Push to the main branch.
-3. Mintlify automatically rebuilds and deploys the site (GitHub App integration).
+Pushing to `main` triggers an automatic rebuild and deploy through the Mintlify GitHub App. There is no manual build step. QA changes with `npx mint@latest dev` or branch previews before merging.
 
-There is no manual build step required for production.
+## Docs-as-code case study
 
-## Theme & stack
+The 2026-09 buyer-path overhaul of this site is documented as a public case study: [milestone 1](https://github.com/vinibarbosabr/thecoding-docs/milestone/1) tracks every phase, and the [merged overhaul PR](https://github.com/vinibarbosabr/thecoding-docs/pull/14) shows the full paper trail, from inventory audit to ship.
 
-Platform: [Mintlify](https://mintlify.com/)
-Theme: [Palm](https://palm.mintlify.site/)
-Content format: [MDX](https://github.com/mdx-js/mdx/)
-Primary colors: defined in docs.json (#042F2E, #FFF3CE, #008BBE)
+## Contributing
 
-This site itself is an example of the documentation engineering work offered by thecoding.
+Bug reports, typos, broken links, and small improvements are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for issue forms, the endorsement flow, and PR conventions.
 
-## Contributing / Leaving a recommendation
-
-This repository is public by design and follows Free (Libre) Open-Source Software practices/ethos.
-
-### Recommendations & Endorsements
-
-Clients, collaborators, and community members can leave public recommendations via a **GitHub issue form**. No fork or pull request is needed.
-
-1. Open the issue form:
-   `https://github.com/vinibarbosabr/thecoding-docs/issues/new?template=endorsement.yml`
-2. Fill in the short form with your name, role, company/project, an optional link, and your recommendation (2–6 sentences).
-3. Hit submit.
-
-Approved recommendations are published to the public **Recommendations & Endorsements** page and the issue is then closed.
-
-### Other Contributions
-
-Bug reports, typos, broken links, and small improvements are highly welcome via Issues or PRs.
+Clients and collaborators can leave a public recommendation through the [endorsement issue form](https://github.com/vinibarbosabr/thecoding-docs/issues/new?template=endorsement.yml). No fork or pull request needed. Approved recommendations are published to the [Recommendations & Endorsements](https://thecoding.dev/endorsements) page.
 
 ## Contact
 
@@ -103,4 +92,4 @@ Bug reports, typos, broken links, and small improvements are highly welcome via 
 
 ## License
 
-MIT
+[MIT](LICENSE). Copyright (c) 2026 Vini B | thecoding.
