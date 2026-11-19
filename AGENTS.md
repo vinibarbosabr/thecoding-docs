@@ -7,10 +7,11 @@
 - Deploy: push to `main` → Mintlify GitHub App rebuilds automatically. QA on local preview (`mint dev`) or branch previews before anything reaches `main`
 - Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP; use `https://www.mintlify.com/docs/mcp` for Mintlify product knowledge
 
-## Active work: 2026-09 buyer-path docs overhaul
+## Active work: 2026-11 content refresh
 
-This overhaul doubles as a public docs-as-code case study for thecoding.dev.
-Brief and progress log: `internal/OVERHAUL.md` (gitignored, kept out of the public repo). Public tracking: [milestone 1 — Overhaul: buyer path (2026-09)](https://github.com/vinibarbosabr/thecoding-docs/milestone/1) · starter issue #4 · per-phase follow-on issues.
+Successor to the 2026-09 buyer-path overhaul (SHIPPED 2026-09-25 via [PR #14](https://github.com/vinibarbosabr/thecoding-docs/pull/14); [milestone 1](https://github.com/vinibarbosabr/thecoding-docs/milestone/1) closed, phase checklist below kept as the historical record).
+
+Brief and plan: internal (vault `projects/thecoding-docs/notes/2026-11-19_content-refresh-plan.md`; not in this repo). Scope: portfolio cards (0xramp ZCG grant, OpenZcash sprint, nearsc entry, AxonDAO approval-gated), resume, security-documentation SKUs under the Documentation Engineering lane, sync pass (llms.txt, README), anti-update-debt rule.
 
 Roadmap checklist — a phase starts only when the previous phase's exit criteria are met:
 
@@ -27,23 +28,23 @@ Roadmap checklist — a phase starts only when the previous phase's exit criteri
 
 ## How we work
 
-- One concern per PR; feature PRs target the overhaul branch, not `main` (the site deploys from `main`)
+- One concern per PR; feature PRs target the round's topic branch, not `main` (the site deploys from `main`)
+- **Manual review gate (2026-11-19):** edit → local commit → stop and hand off → Vini reviews every copy/page/diff in Nvim and edits freely → Vini signals done → only then QA (`npx mint@latest dev`, link checks, style greps) → commit Vini's edits → push → PR. No merge to `main` until the full round passes final QA + Vini's final go
 - Conventional commit prefixes: `docs:`, `feat:`, `fix:`, `chore:`
 - No unpublished claims: only state what the proof inventory allows
-- Inventory before adjectives; structure before sentences; pricing and quickstart before the homepage
-- Every old URL must keep working; this run changes titles, not slugs, with one sanctioned exception: the Developer Education merge (`/devrel` + `/technical-writing` → `/developer-education`, with redirects)
+- Every old URL must keep working; no slug changes planned this round
 - Keep a clean paper trail: the PR history is part of the public case study
 
 ## Public vs internal
 
 - Everything tracked in git is public (`AGENTS.md`, all MDX) — write accordingly
-- Sensitive, security-related, or internal-only notes belong in `internal/` (gitignored)
+- Internal notes live outside this repo: the vault workstream `thecoding-agent/workspace/projects/thecoding-docs/` (plan, decision log, review handoffs). The 2026-09 overhaul's internal record (`OVERHAUL.md`, source of truth) also lives there; this repo keeps no `internal/` directory
 - Never commit secrets, keys, private client data, or NDA-restricted details (anonymize or omit)
 
 ## Terminology
 
-- Lane and SKU names are frozen in Phase 3 (`internal/source-of-truth.md` once it exists); until then, do not rename lanes or SKUs in copy
-- Decided 2026-09-23: target shape is **two commercial lanes** — Documentation Engineering and **Developer Education** (merge of technical-writing + devrel). `Technical Education` stays a product name, never a lane. Details in `internal/OVERHAUL.md` decision log
+- Lane and SKU names are frozen in the vault source of truth (`projects/thecoding-docs/internal/source-of-truth.md`, v1.3); do not rename lanes or SKUs in copy
+- Decided 2026-09-23: target shape is **two commercial lanes** — Documentation Engineering and **Developer Education** (merge of technical-writing + devrel). `Technical Education` stays a product name, never a lane. Details in the vault `OVERHAUL.md` decision log
 - Primary action is a **briefing** (send a brief / book 20 minutes), not a "call" or "chat"
 
 ## Style preferences
