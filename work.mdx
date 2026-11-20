@@ -6,29 +6,18 @@ sidebarTitle: "Work"
 
 **Vini B | thecoding** has been producing technical content, documentation, education material and developing solutions for crypto, blockchain, and web3 since 2020. Below is some selected work.
 
-<CardGroup cols={2}>
-  <Card
+<Card
     title="0xramp: docs site and partner SDK"
     icon="book"
     href="https://docs.0xramp.app"
   >
     - **Context:** 0xramp is a non-custodial fiat-to-crypto ramp I co-build. The lead developer owns the app and most of its code; I own documentation and the partner SDK. A [Zcash Community Grants](https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/454) award funds this docs and SDK track: approved October 2026, running through February 2027.
-    - **Surface:** Full docs site (Mintlify, docs-as-code, 2026), the partner SDK (TypeScript, v0), and integration talks with an embedded-wallet team (name withheld pending announcement).
-    - **Shipped:** [docs.0xramp.app](https://docs.0xramp.app), with its [docs repo](https://github.com/0xramp-labs/0xramp-docs) and a [full overhaul pull request](https://github.com/0xramp-labs/0xramp-docs/pull/2); docs pull requests #4 to #10 this grant cycle. Milestone 1 surfaces: risk disclosures before the confirm step on BUY, SELL, SWAP and PAY; the public [metrics page](https://0xramp.app/data) with its [reproducible methodology](https://docs.0xramp.app/metrics-methodology); the [corridor status page](https://0xramp.app/status); and the first monthly report on the Zcash Community Forum. Partner SDK lead engineering: origin-pinned WebView bridge, golden-fixture conformance tests, sandbox, and Electron and React Native examples; engineering docs `SPEC.md`, `DESIGN.md`, and the [partner guide](https://github.com/0xramp-labs/0xramp-sdk/blob/main/docs/partner-guide.md); and the [v0.0.3 security release](https://github.com/0xramp-labs/0xramp-sdk/releases/tag/v0.0.3), cut October 22, 2026.
+    - **Surface:** Full docs site (Mintlify, docs-as-code, 2026), the partner SDK (TypeScript, v0), and integration work with the Zingo Wallet.
+    - **Shipped:** [docs.0xramp.app](https://docs.0xramp.app), with its [docs repo](https://github.com/0xramp-labs/0xramp-docs), a [full overhaul pull request](https://github.com/0xramp-labs/0xramp-docs/pull/2), and docs pull requests #4 to #10 this grant cycle.
+    - Milestone 1 surfaces: risk disclosures before the confirm step on BUY, SELL, SWAP and PAY; the public [metrics page](https://0xramp.app/data) with its [reproducible methodology](https://docs.0xramp.app/metrics-methodology); the [corridor status page](https://0xramp.app/status); and the first monthly report on the Zcash Community Forum.
+    - Partner SDK lead engineering: origin-pinned WebView bridge, golden-fixture conformance tests, sandbox, and Electron and React Native examples; engineering docs `SPEC.md`, `DESIGN.md`, and the [partner guide](https://github.com/0xramp-labs/0xramp-sdk/blob/main/docs/partner-guide.md); and the [v0.0.3 security release](https://github.com/0xramp-labs/0xramp-sdk/releases/tag/v0.0.3), cut October 22, 2026.
     - **Not done:** Not the app's lead developer.
     - **Outcome:** Docs versioned in git and kept current from beta to V1. The SDK gives wallet teams a concrete integration surface. Milestone 1 of the grant was accepted November 10, 2026; the funded track runs through February 2027.
-  </Card>
-
-  <Card
-    title="OpenZcash: documentation and CI checks"
-    icon="code-branch"
-    href="https://openzcash.org"
-  >
-    - **Context:** [openzcash.org](https://openzcash.org) is a public Zcash Dev Fund transparency portal. I ran a paid documentation sprint for it inside the September 22 to November 6, 2026 window, with the final sprint week October 26 to November 1. I keep contributing as a volunteer.
-    - **Surface:** Documentation pages and the checks that run on every pull request, in the site's repository.
-    - **Shipped:** The interactive [Zarvis guide](https://openzcash.org/zarvis/guide), CI checks that run on every PR, and source verification behind the Crosslink guide. Open-source readiness: CSV formula-injection hardening, a `SECURITY.md` with scope and safe-harbor language, pinned CI SHAs, Dependabot, issue and pull request templates, `CODEOWNERS`, a Code of Conduct, and a `CONTRIBUTING.md` deployment checklist.
-    - **Not done:** Not the site's owner or maintainer. One paid sprint, then volunteer.
-    - **Outcome:** The [OpenZcash Treasury](https://openzcash.org/openzcash-treasury) published a public memo on November 19, 2026 naming this work: the Zarvis guide, the checks that run on every PR, and the Crosslink source verification.
   </Card>
 
   <Card title="A HIPAA-compliant DeSci DAO: security documentation" icon="shield">
@@ -40,12 +29,26 @@ sidebarTitle: "Work"
   </Card>
 
   <Card
+    title="OpenZcash: documentation and CI checks"
+    icon="code-branch"
+    href="https://openzcash.org"
+  >
+    - **Context:** [openzcash.org](https://openzcash.org) is a public Zcash ecosystem transparency portal. I ran a paid documentation sprint for it inside the September 22 to November 6, 2026 window, with the final sprint week October 26 to November 1. I keep contributing as a volunteer and plan to apply for bounties once they start (donation-funded treasury).
+    - **Surface:** Documentation pages and the checks that run on every pull request, in the site's repository.
+    - **Shipped:** First sprint half: public-facing `README.md` and in-repo docs improvements, methodology documentation edits, code-to-docs consistency review, and a v1.1.0 upgrade to the site's published `zcg-copilot` agent skill.
+    - Second half: the interactive [Zarvis guide](https://openzcash.org/zarvis/guide), CI checks that run on every PR, and source verification behind the Crosslink guide.
+    - Open-source readiness: CSV formula-injection hardening, a `SECURITY.md` with scope and safe-harbor language, pinned CI SHAs, Dependabot, issue and pull request templates, `CODEOWNERS`, a Code of Conduct, and a `CONTRIBUTING.md` deployment checklist.
+    - **Not done:** Not the site's owner or maintainer. One paid sprint, then volunteer.
+    - **Outcome:** The [OpenZcash Treasury](https://openzcash.org/openzcash-treasury) published a public memo on November 19, 2026 naming this work: the Zarvis guide, the checks that run on every PR, and the Crosslink source verification.
+  </Card>
+
+  <Card
     title="nearsc: NEAR contract security scanner"
     icon="magnifying-glass"
     href="https://github.com/vinibarbosabr/nearsc-auditor"
   >
     - **Context:** My own Rust security toolkit for NEAR smart contracts, built as my NEAR Hackathon 2026 entry. Entry submitted, results pending.
-    - **Surface:** The [nearsc-auditor repo](https://github.com/vinibarbosabr/nearsc-auditor) and [crates.io](https://crates.io/crates/nearsc).
+    - **Surface:** The [nearsc-auditor repo](https://github.com/vinibarbosabr/nearsc-auditor) and crates.io: [nearsc crate](https://crates.io/crates/nearsc) + [nearsc-mcp crate](https://crates.io/crates/nearsc-mcp).
     - **Shipped:** The `nearsc` CLI: 13 deterministic rules (NS001 to NS013) reporting text, JSON, SARIF or HTML. `nearsc-mcp`: five read-only tools for coding agents. A sourced exploit knowledge base, a `nearsc-skill`, and a GitHub Action. Published on crates.io at v0.1.2, with signed release assets.
     - **Not done:** Not client work and not an audit engagement. Static analysis flags review candidates; it does not replace a manual audit.
     - **Outcome:** The toolkit is installable and dogfoods itself: the repo's own GitHub Action scans it on every push.
@@ -88,7 +91,6 @@ sidebarTitle: "Work"
     - **Not done:** Volunteer work, not a paid engagement.
     - **Outcome:** The [tenure recap](https://x.com/vinibarbosabr/status/1946250101422170250) received a public acknowledgment from MultiversX CEO Beniamin Mincu.
   </Card>
-</CardGroup>
 
 ## More work
 
